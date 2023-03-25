@@ -25,15 +25,16 @@ body {
 /* Логотип */
 .logo {
   color: var(--title-text-color);
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #4d5ae5;
 }
-.logo-text-ahead {
-  color: var(--primary-brand-color);
+.logo-text-header {
+  color: var(--title-text-color);
 }
 
 /* Навігація */
@@ -47,12 +48,14 @@ body {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--primary-brand-color);
+  color: var(--pressed-state-color);
 }
 /* Контакти */
 .tel-email .link {
   color: var(--body-text-color);
+  font-family: 'Roboto';
   font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -60,7 +63,7 @@ body {
 
 .tel-email .link:hover,
 .tel-email .link:focus {
-  color: var(--primary-brand-color);
+  color: var(--pressed-state-color);
 }
 
 /* Секція герой */
@@ -72,7 +75,7 @@ body {
   color: var(--background-white-color);
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.1;
+  line-height: 1;
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -90,8 +93,12 @@ body {
   cursor: pointer;
 }
 
+.button.hero-btn:hover,
+.button.hero-btn:focus {
+  background-color: var(--pressed-state-color);
+}
 .button.filters {
-  background-color: var(--accent-color);
+  background-color: var(--background-section-color);
   color: var(--primary-brand-color);
 }
 
@@ -106,13 +113,14 @@ body {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 /* Секція 1 */
 .advantages .title,
+.services-title,
 .section-team-title-empl {
   color: var(--title-text-color);
   font-weight: 500;
@@ -120,15 +128,27 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
+.section-advantages-text,
+.section-team-text,
+.services-text,
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 /* Секція 3 */
 .section-team {
   background-color: var(--background-section-color);
+}
+.section-team-card {
+  background-color: var(--background-white-color);
 }
 /* футер */
 .footer {
   background-color: var(--background-dark-color);
   color: var(--background-section-color);
 }
-.logo-text-behindt {
+.logo-text-footer {
   color: var(--background-section-color);
 }
