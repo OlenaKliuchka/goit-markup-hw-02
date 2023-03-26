@@ -53,9 +53,9 @@ body {
 /* Контакти */
 .tel-email .link {
   color: var(--body-text-color);
-  font-family: 'Roboto';
+}
+.tel-email {
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -75,7 +75,7 @@ body {
   color: var(--background-white-color);
   font-weight: 700;
   font-size: 56px;
-  line-height: 1;
+  line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -136,6 +136,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.services-text {
+  color: var(--body-text-color);
 }
 /* Секція 3 */
 .section-team {
